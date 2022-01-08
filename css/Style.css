@@ -1,0 +1,285 @@
+@import url('font.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: var(--robate);
+}
+:root{
+    /* theme font-family */
+    --robate:'robate';
+   /* theme color */
+   --text-gray:#2b333b;
+   --text-light:#686666da;
+   --bg-color: #0f0f0f;
+   --white: #fff;
+   --midnight: #104f55;
+
+   /* gradiend color */
+   --sky: linear-gradient(120deg, #c1d7fa 0%, #ecf6fa 100%);
+}   
+/* ----------- header section start ------------ */
+.navbar{
+    background-color: rgb(233, 240, 245) !important;
+}
+.header{
+    background-color: var(--text-gray);
+    color: #fff;
+    box-sizing: border-box;
+}
+.header .col-sm-6 i{
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+.header .col-sm-6 span{
+    margin:0 3px ;
+}
+.header-col-1{
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+.header-col-2{
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* ------------- nav section start ------------- */
+.navbar-nav li{
+   margin: 5px 15px;
+   border: 1px solid var(--text-gray);
+   border-radius: 5px;
+}
+.navbar-nav li a{
+    padding:7px 10px;
+    color: var(--text-gray) !important;
+    outline: none;
+}
+.navbar-nav li:hover a{
+    background-color: var(--text-gray);
+    color: #fff !important;
+}
+
+.nav-link .fab{
+    margin: 0 10px;
+    color: var(--text-gray);
+    font-size: 1.2rem;
+}
+
+/* ------------- landing section part ---------- */
+.landing{
+    background-image:linear-gradient(to right,rgb(184, 233, 250),#fff);
+}
+
+.landing-col .content{
+    padding: 25px;
+}
+.landing-col .content h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.landing-col .content span{
+    color: dodgerblue;
+}
+.landing-col .content p{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.content .category{
+    background-color: var(--text-gray);
+    color: #fff;
+    padding: 5px;
+}
+.content .category-list li a{
+    text-decoration: none;
+    color: var(--text-gray);
+    display: block;
+    font-size: 1.2rem;
+    padding: 0 5px;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+}
+.content .category-list li a:hover{
+    background-color: var(--text-gray);
+    color: #fff;
+}
+.content .fas{
+    font-size: 2rem;
+    margin-top: 40px;
+    animation: anim 4s infinite;
+    
+}
+@keyframes anim{
+    0% {transform: translateY(0)}
+    20% {transform: translateY(0)}
+    40% {transform: translateY(-30px)}
+    50% {transform: translateY(0)}
+    60% {transform: translateY(-50px)}
+    80% {transform: translateY(0)}
+    100% {transform: translate(0)}
+}
+.carousel-item{
+    padding: 20px;
+}
+.carousel-item img{
+    height: 30rem;
+}
+/* Blog Carousel */
+.blog{
+    background-image:linear-gradient(to right,#fff, rgb(211, 235, 243));
+    height: 85vh;
+    width: 100%;
+    margin-top: 1rem;
+}
+.blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    height: 60vh;
+    margin: 3rem auto;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+.blog-post .blog-content img{
+    height: 35vh; 
+}
+.blog-content .blog-title{
+    margin-top: 10px;
+}    
+.blog-content .blog-btn{
+    border: 2px solid #fff;
+    margin-top: 10px;
+    background-image:linear-gradient(to right,rgb(99, 210, 247),rgb(232, 244, 250));
+    border-radius: 50px;
+    padding: .7rem 2rem;
+    margin-bottom: .5rem;
+}
+.blog-content .blog-btn:hover{
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+}
+.blog-content span{
+    display: block;
+}
+
+/* ---------- about us section ------------ */
+.about-us .card{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.about-us .col-4{
+   padding:10px;
+}
+.about-us .card img{
+    width: 100%;
+    height: 100%;
+}    
+
+/* ---------- contact section ------------  */
+.contact{
+    background-image:linear-gradient(to right,rgb(184, 233, 250),#fff);
+    padding: 20px;
+}
+.contact .col-sm-6{
+    padding: 20px;
+}
+.contact .col-sm-6:first-child{
+    border-right: 2px double var(--text-gray);    
+}
+.contact .col-sm-6 .detail p{
+    margin: 20px 0;
+}
+.contact .col-sm-6 form input{
+    background-color: transparent;
+    border: 2px solid var(--midnight);
+}
+.contact .col-sm-6 form textarea{
+    border: 2px solid var(--midnight);
+}
+
+/* -------- map section ------------- */
+.map iframe{
+    width: 100%;
+    height: 20rem;
+    border: 2px dashed var(--midnight);
+}
+/* --------- footer section ----------- */
+.footer{
+    background: var(--text-gray);
+    color: #fff;
+}
+.footer .col-md-3{
+    /* border: 2px solid #fff; */
+    padding: 50px;
+}
+.footer .col-md-3 h2{
+    margin: 10px 0 20px 0;
+    border-left: 4px solid var(--midnight);
+    font-size: 1.5rem;
+    padding-left: 5px;
+}
+.footer .col-md-3 .logo{
+    width: 200px;
+    height: 100px;
+}
+.footer .col-md-3 img{
+    width: 100px;
+    height: 100px;
+}
+.footer .col-md-3 .flex-row{
+    display: flex;
+}
+.footer .col-md-3 ul li{
+    list-style: none;
+    margin-top: 10px;
+    padding:10px 5px ;
+    border: 2px dashed var(--midnight);
+}
+.footer .col-md-3 ul li:hover{
+    background: var(--midnight);
+}
+
+.footer .move-up{
+    position: absolute;
+    right: 6rem;
+    top: 50%;
+}
+.footer .move-up span{
+    color: var(--midnight);
+}
+.footer .move-up span:hover{
+    color: white;
+    cursor: pointer;
+}
+.copyright{
+    text-align: center;
+    padding: 5px;
+    font-size:1.2rem;
+    color: var(--text-gray);
+    padding-bottom: 0;
+}
+
+
+/* ----------------- Media query section ------------------- */
+@media (max-width:600px){
+    .header-col-1{
+        margin-bottom: 0;
+    }
+    .header-col-2{
+        text-align: left;
+        
+    }
+    .landing-col .content h1{
+        font-size: 2.2rem;
+    }
+    .contact .col-sm-6:first-child{
+        border-right: none;
+        border-bottom: 2px solid var(--text-gray);
+    }
+    .footer .col-md-3{
+        padding: 20px 10px;
+    }
+
+}

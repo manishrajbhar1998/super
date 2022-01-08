@@ -1,0 +1,63 @@
+@import url('font.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: var(--robate);
+}
+:root{
+    /* theme font-family */
+    --robate:'robate';
+   /* theme color */
+   --text-gray:#2b333b;
+   --text-light:#686666da;
+   --bg-color: #0f0f0f;
+   --white: #fff;
+   --midnight: #104f55;
+
+   /* gradiend color */
+   --sky: linear-gradient(120deg, #c1d7fa 0%, #ecf6fa 100%);
+}  
+/* -------------------- product section --------------------------- */
+.navbar{
+    background-color: rgb(233, 240, 245) !important;
+}
+.all-product h1{
+    background-color: var(--text-gray);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+.product .col-sm-6 img{
+    min-width: 20rem;
+    min-height: 20rem;
+}
+
+/* sub-product */
+.sub-product .card img{
+    height: 300px;
+    background: var(--text-gray);
+}
+.sub-product h1{
+    background-color: var(--midnight);
+    padding: 5px;
+    color: #fff;
+}
+/* all */
+
+.owl-theme .item{
+    width: 100%;
+
+}
+.owl-theme .item .card img{
+     height: 300px;
+     width: 100%;
+}
+
+@media (max-width:600px){
+    .sub-product .card img{
+        max-height: 250px;
+        background: var(--text-gray);
+    }
+
+}
